@@ -20,23 +20,49 @@ module.exports = {
             link: '/'
           },
           {
-            text: '文章列表',
+            text: '文章',
             link: '/guide/'
           },
         ],
         sidebar: {
           '/guide/': [{
-              title: '技术文章',
+              title: '初识',
               collapsable: true,
-              children: ['/guide/', '/guide/test/a.md']
+              children: ['/guide/']
+            }, {
+              title: 'Javascript',
+              collapsable: true,
+              children: ['/guide/JS/cc.md']
+            }, {
+              title: 'Vue',
+              collapsable: true,
+              children: ['/guide/Vue/01.md']
+            }, {
+              title: 'React',
+              collapsable: true,
+              children: ['/guide/React/01.md']
+            },{
+              title: 'Nodejs',
+              collapsable: true,
+              children: ['/guide/Nodejs/01.md']
+            }, {
+              title: '算法',
+              collapsable: true,
+              children: ['/guide/Algorithm/01.md']
+            }, {
+              title: '生活',
+              collapsable: true,
+              children: ['/guide/Life/01.md']
             },
-            {
-              title: '算法进阶',
-              collapsable: true,
-              children: ['/guide/test/b.md']
-            }
           ]
         }
+      }
+    }
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': './'
       }
     }
   }

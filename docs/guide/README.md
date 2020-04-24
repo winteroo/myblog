@@ -1,29 +1,12 @@
 # 介绍
-## 哈哈哈哈
+## 作者 -- 杨威
+::: tip yangw
+可在线访问的小型个人博客网站
+:::
 
+![图片访问](~@/home.png)
 
-图片访问
-<!-- ![图片访问](../image/right.png) -->
-
-代码高亮
+## 吃饭的家伙
 ```js{1}
-let a = 'ff'
-
+const hero = '你是真的秀！！'
 ```
-
-tip说明
-::: tip
-This is a tip
-:::
-
-::: warning
-This is a warning
-:::
-
-::: danger
-This is a dangerous warning
-:::
-
-::: danger STOP
-Danger zone, do not proceed
-:::
