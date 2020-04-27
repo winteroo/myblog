@@ -1,6 +1,8 @@
+let menuConf = require('./menuConf');
+
 module.exports = {
   title: '进击的小超人',
-  description: '用于记录前端技术、算法、数据结构',
+  description: 'Javascript、Nodejs、Vue、React、Algorithm',
   base: '/myblog/',
   head: [
     [
@@ -11,7 +13,12 @@ module.exports = {
       }
     ]
   ],
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
+    logo: '/home.jpg',
+    smoothScroll: true,
     locales: {
       '/': {
         editLinkText: 'Edit this page on GitHub',
@@ -32,27 +39,27 @@ module.exports = {
             }, {
               title: 'Javascript',
               collapsable: true,
-              children: ['/guide/JS/cc.md']
+              children: getChildren(menuConf.JSChildren)
             }, {
               title: 'Vue',
               collapsable: true,
-              children: ['/guide/Vue/01.md']
+              children: getChildren(menuConf.vueChildren)
             }, {
               title: 'React',
               collapsable: true,
-              children: ['/guide/React/01.md']
+              children: getChildren(menuConf.reactChildren)
             },{
               title: 'Nodejs',
               collapsable: true,
-              children: ['/guide/Nodejs/01.md']
+              children: getChildren(menuConf.nodeChildren)
             }, {
               title: '算法',
               collapsable: true,
-              children: ['/guide/Algorithm/01.md']
+              children: getChildren(menuConf.algorithmChildren)
             }, {
               title: '生活',
               collapsable: true,
-              children: ['/guide/Life/01.md']
+              children: getChildren(menuConf.lifeChildren)
             },
           ]
         }
@@ -65,5 +72,12 @@ module.exports = {
         '@': './'
       }
     }
-  }
+  },
+  plugins: ['@vuepress/back-to-top', '@vuepress/active-header-links']
+}
+
+function getChildren (childrenList, type = '') {
+  return childrenList.map(el => {
+   return type + el; 
+  })
 }
