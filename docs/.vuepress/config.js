@@ -1,4 +1,5 @@
 let menuConf = require('./menuConf');
+const path = require('path')
 
 module.exports = {
   title: '进击的小超人',
@@ -69,7 +70,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@': './'
+        '@': path.join(__dirname, '..', 'guide')
       }
     }
   },

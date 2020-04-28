@@ -1,7 +1,7 @@
 module.exports = {
   // JS菜单
   JSChildren: [
-    '/guide/JS/cc.md'
+    '/guide/JS/positionOperation.md'
   ],
   // Vue菜单
   vueChildren: [
@@ -19,7 +19,9 @@ module.exports = {
   algorithmChildren: [
     '/guide/Algorithm/001twoSum.md',
     '/guide/Algorithm/002twoNumAdd.md',
-    '/guide/Algorithm/034searchRange.md'
+    '/guide/Algorithm/034searchRange.md',
+    '/guide/Algorithm/035searchInsert.md',
+    '/guide/Algorithm/036isValidSudoku.md'
   ],
   // 生活菜单
   lifeChildren: [

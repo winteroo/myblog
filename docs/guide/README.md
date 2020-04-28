@@ -7,9 +7,10 @@
 * **语言**：javascript => ES6
 * **框架**：Vue ||  React ||  Koa2
 * **宣言**：每天进步一点点
+* **GitHub**： <a href="https://github.com/winteroo/myblog" target="_blank">https://github.com/winteroo/myblog</a>
 :::
 
-![图片访问](~@/image/chaoren.jpeg)
+![小超人](~@/image/chaoren.jpeg)
 
 ## 吃饭的家伙
 
