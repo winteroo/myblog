@@ -2,7 +2,7 @@
 home: true
 heroImage: /home.jpg
 actionText: 立即开始 →
-actionLink: /guide/
+actionLink: /Front/
 features:
 - title: 前端基础 → js
   details: 记录javascript基础知识，并深入研究其使用方法和坑点

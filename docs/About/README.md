@@ -10,7 +10,7 @@
 * **GitHub**： <a href="https://github.com/winteroo/myblog" target="_blank">https://github.com/winteroo/myblog</a>
 :::
 
-![小超人](~@/image/chaoren.jpeg)
+![小超人](~@About/image/chaoren.jpeg)
 
 ## 吃饭的家伙
 
