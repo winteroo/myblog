@@ -20,9 +20,14 @@ module.exports = {
   themeConfig: {
     logo: '/home.jpg',
     smoothScroll: true,
+    editLinks: true,
+    editLinkText: '帮助我改善此页面',
+    lastUpdated: '最后更新',
     locales: {
       '/': {
-        editLinkText: 'Edit this page on GitHub',
+        editLinks: true,
+        editLinkText: '帮助我改善此页面',
+        lastUpdated: '最后更新',
         nav: [{
             text: '首页',
             link: '/'

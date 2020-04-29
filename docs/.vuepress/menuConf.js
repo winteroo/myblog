@@ -40,10 +40,10 @@ module.exports = {
       '/Nodejs/01.md'
     ],
     expressChildren: [
-      '/Nodejs/01.md'
+      '/Express/01.md'
     ],
     koa2Children: [
-      '/Nodejs/01.md'
+      '/Koa2/01.md'
     ],
   },
   LifeMenu: {
