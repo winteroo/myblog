@@ -3,7 +3,7 @@ const path = require('path')
 
 module.exports = {
   title: '进击的小超人',
-  description: 'Javascript、Nodejs、Vue、React、Algorithm',
+  description: 'JavaScript、Nodejs、Vue、React、Algorithm',
   base: '/myblog/',
   head: [
     [
@@ -21,11 +21,9 @@ module.exports = {
     logo: '/home.jpg',
     smoothScroll: true,
     editLinks: true,
-    editLinkText: '帮助我改善此页面',
-    lastUpdated: '最后更新',
+    searchMaxSuggestions: 10,
     locales: {
       '/': {
-        editLinks: true,
         editLinkText: '帮助我改善此页面',
         lastUpdated: '最后更新',
         nav: [{
@@ -38,7 +36,11 @@ module.exports = {
           },
           {
             text: '后端',
-            link: '/Backend/'
+            // link: '/Backend/',
+            items: [
+              { text: 'Nodejs', link: '/Backend/Nodejs/' },
+              { text: 'Java', link: '/Backend/Java/' }
+            ]
           },
           {
             text: '算法与数据结构',
@@ -65,7 +67,7 @@ module.exports = {
             collapsable: true,
             children: ['/Front/']
           }, {
-            title: 'Javascript',
+            title: 'JavaScript',
             collapsable: true,
             children: getChildren('/Front', menuConf.FrontMenu.JSChildren)
           }, {
@@ -81,7 +83,7 @@ module.exports = {
             collapsable: true,
             children: getChildren('/Front', menuConf.FrontMenu.designPatternsMenu)
           }, {
-            title: 'css',
+            title: 'Css',
             collapsable: true,
             children: getChildren('/Front', menuConf.FrontMenu.cssMenu)
           }],
@@ -101,27 +103,38 @@ module.exports = {
               children: getChildren('/Algorithm', menuConf.AlgorithmMenu.algorithmChildren)
             },
           ],
-          '/Backend/': [{
+          '/Backend/Nodejs': [{
               title: '概述',
               collapsable: true,
-              children: ['/Backend/']
+              children: ['/Backend/Nodejs/']
             },
             {
-              title: 'Nodejs',
+              title: 'NodeJs',
               collapsable: true,
-              children: getChildren('/Backend', menuConf.BackendMenu.nodeChildren)
+              children: getChildren('/Backend', menuConf.BackendMenu.nodejs.nodeChildren)
             },
             {
               title: 'Express',
               collapsable: true,
-              children: getChildren('/Backend', menuConf.BackendMenu.expressChildren)
+              children: getChildren('/Backend', menuConf.BackendMenu.nodejs.expressChildren)
             },
             {
               title: 'Koa2',
               collapsable: true,
-              children: getChildren('/Backend', menuConf.BackendMenu.koa2Children)
-            },
+              children: getChildren('/Backend', menuConf.BackendMenu.nodejs.koa2Children)
+            }
           ],
+          '/Backend/Java': [{
+            title: '概述',
+            collapsable: true,
+            children: ['/Backend/Java/']
+          },
+          {
+            title: 'Java',
+            collapsable: true,
+            children: getChildren('/Backend', menuConf.BackendMenu.java.javaChildren)
+          }
+        ],
           '/About/': [{
             title: '关于作者',
             collapsable: true,

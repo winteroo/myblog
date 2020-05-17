@@ -33,4 +33,4 @@ let str = new String('test')
 :loud_sound:
 拆箱就是将引用类型转换为基本数据类型，拆箱的方法有两个valueOf()和toString()，以下为在chrome浏览器中的测试结果。
 :::
-![chome浏览器测试](https://upload-images.jianshu.io/upload_images/14016578-5289a46d609bae4e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![chome浏览器测试](~@Front/JS/image/package.png)

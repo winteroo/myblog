@@ -4,7 +4,11 @@ module.exports = {
     JSChildren: [
       '/JS/001positionOperation.md',
       '/JS/002packing.md',
-      '/JS/003stringCut.md'
+      '/JS/003stringCut.md',
+      '/JS/004eventLoop.md',
+      '/JS/005closure.md',
+      '/JS/006prototypeChain.md',
+      '/JS/007json.md'
     ],
     // Vue菜单
     vueChildren: [
@@ -26,25 +30,34 @@ module.exports = {
     algorithmChildren: [
       '/algorithm/001twoSum.md',
       '/algorithm/002twoNumAdd.md',
+      '/algorithm/033search.md',
       '/algorithm/034searchRange.md',
       '/algorithm/035searchInsert.md',
-      '/algorithm/036isValidSudoku.md'
+      '/algorithm/036isValidSudoku.md',
+      '/algorithm/037solveSudoku.md',
     ],
     dataStructureMenu: [
       '/dataStructure/001stack.md',
     ]
   },
   BackendMenu: {
-    // nodejs菜单
-    nodeChildren: [
-      '/Nodejs/01.md'
-    ],
-    expressChildren: [
-      '/Express/01.md'
-    ],
-    koa2Children: [
-      '/Koa2/01.md'
-    ],
+    nodejs: {
+      // nodejs菜单
+      nodeChildren: [
+        '/Nodejs/01.md'
+      ],
+      expressChildren: [
+        '/Nodejs/Express/01.md'
+      ],
+      koa2Children: [
+        '/Nodejs/Koa2/01.md'
+      ],
+    },
+    java: {
+      javaChildren: [
+        '/Java/001--javaLearn.md'
+      ]
+    }
   },
   LifeMenu: {
     // 生活菜单

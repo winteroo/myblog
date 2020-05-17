@@ -17,7 +17,7 @@ stringObject.substring(start,end)
 **substring总是会将start，end中的小值当做截取的开始值，即使大值在start位置**
 :::
 
-![chrome测试结果](https://upload-images.jianshu.io/upload_images/14016578-00b6aae5dc65805f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![chrome测试结果](~@Front/JS/image/slice.png)
 
 ## substr
 
@@ -29,7 +29,7 @@ stringObject.substr(start,length)
 **注意此api不是ECMAscript标准化的api，故少用**
 :::
 
-![chrome测试substr](https://upload-images.jianshu.io/upload_images/14016578-c038efeb810b708c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![chrome测试substr](~@Front/JS/image/substr.png)
 
 ## 总结
 ::: warning 说明
