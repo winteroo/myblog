@@ -28,6 +28,7 @@ module.exports = {
   AlgorithmMenu: {
     // 算法菜单
     algorithmChildren: [
+      '/algorithm/000addParentId.md',
       '/algorithm/001twoSum.md',
       '/algorithm/002twoNumAdd.md',
       '/algorithm/033search.md',
@@ -55,7 +56,8 @@ module.exports = {
     },
     java: {
       javaChildren: [
-        '/Java/001--javaLearn.md'
+        '/Java/001--javaLearn.md',
+        '/Java/002--makeSpringBootProject.md'
       ]
     }
   },

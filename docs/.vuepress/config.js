@@ -24,8 +24,8 @@ module.exports = {
     searchMaxSuggestions: 10,
     locales: {
       '/': {
-        editLinkText: '帮助我改善此页面',
-        lastUpdated: '最后更新',
+        label: '简体中文',
+        lastUpdated: '上次更新',
         nav: [{
             text: '首页',
             link: '/'
@@ -166,7 +166,13 @@ module.exports = {
       }
     }
   },
-  plugins: ['@vuepress/back-to-top', '@vuepress/active-header-links']
+  plugins: [
+    '@vuepress/back-to-top', 
+    '@vuepress/active-header-links', 
+    '@vuepress/last-updated', 
+    '@vuepress/medium-zoom',
+    '@vuepress/nprogress'
+  ]
 }
 
 function getChildren(type = '', childrenList) {
