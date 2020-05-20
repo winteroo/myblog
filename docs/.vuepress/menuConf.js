@@ -12,11 +12,16 @@ module.exports = {
     ],
     // Vue菜单
     vueChildren: [
-      '/Vue/01.md'
+      '/Vue/002verficationCode.md'
     ],
     // react菜单
     reactChildren: [
-      '/React/01.md'
+      '/React/001initReact.md',
+      '/React/002initReact2.md',
+      '/React/003initReact3.md',
+      '/React/004initReact4.md',
+      '/React/005reactRouter.md',
+      '/React/006redux.md'
     ],
     designPatternsMenu: [
       '/designPatterns/01.md'
@@ -45,7 +50,7 @@ module.exports = {
     nodejs: {
       // nodejs菜单
       nodeChildren: [
-        '/Nodejs/01.md'
+        '/Nodejs/Node/01.md'
       ],
       expressChildren: [
         '/Nodejs/Express/01.md'

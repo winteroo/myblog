@@ -170,8 +170,7 @@ module.exports = {
     '@vuepress/back-to-top', 
     '@vuepress/active-header-links', 
     '@vuepress/last-updated', 
-    '@vuepress/medium-zoom',
-    '@vuepress/nprogress'
+    '@vuepress/medium-zoom'
   ]
 }
 
