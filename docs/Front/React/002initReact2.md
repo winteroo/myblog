@@ -21,12 +21,12 @@ this.setState({ obj1: 2 })
 ### 3.setState的更新是异步的
 ```js
 this.state = {
-bb: 1
+  bb: 1
 }
 this.setState((preState, preProps) => {
-   return {
-      bb: preState.bb + 1
-   };
+  return {
+    bb: preState.bb + 1
+  };
 });
 console.log(this.state.bb); // 此处打印出来的值为1
 ```
@@ -45,9 +45,9 @@ async changeState () {
 * 2.使用setState的回调函数，数据更新完成后会调用callback
 ```js
 this.setState((preState, preProps) => {
-   return {
-      bb: preState.bb + 1
-   };
+  return {
+    bb: preState.bb + 1
+  };
 },() => {
   console.log(this.state.bb); // 此处打印出来的值为2
 });

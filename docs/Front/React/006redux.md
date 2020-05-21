@@ -194,17 +194,17 @@ export default connect(mapStateToProps, mapDispatchToProps)(TestRedux);
 ```
 
 react-redux的 connect函数接受两个参数mapStateToProps和mapDispatchToProps,正如两个函数的名字一样，两个函数返回一个映射，一个是state => props的映射，一个是dispatch => props 的映射，将store中的数据映射到对应组件的props属性上，这样我们便可以再组件中使用这些属性。
-## 注意
+## 6.注意
 ::: tip 
 
-利用redux-thunk我们返回了getData这个异步函数action，细心的朋友可能已经发现，我再组件中映射dispatch时，利用actionCreator创建了getData的action，然后立即dispatch了这个action，而且在dispatch的这个函数中进行了异步操作，当操作成功后再次调用dispath，整个数据更新操作中dispath了两次，我的理解是
+利用```redux-thunk```我们返回了getData这个异步函数action，细心的朋友可能已经发现，我在组件中映射dispatch时，利用actionCreator创建了getData的action，然后立即dispatch了这个action，而且在dispatch的这个函数中进行了异步操作，当操作成功后再次调用dispath，整个数据更新操作中dispath了两次，我的理解是
 * 1、立即发出的dispatch用于告知redux，我要更新数据，但是我现在不更新，你等我下一次通知。
-* 2、异步请求成功后发出的dispatch就是这个下一次通知，然后redux相应这个更新，修改store中的数据。
+* 2、异步请求成功后发出的dispatch就是这个下一次通知，然后redux响应这个更新，修改store中的数据。
 
 :::
 
 
-## 结语
+## 7.结语
 react和redux分管视图和数据，实现了数据视图的真正分离，这是在大型应用中很好地，也是易于维护的，但是任何事情都有利有弊，当应用逐渐变大，**action和reducer的量也会相应变得更加繁琐**，虽然数据变化和流转是明确的但是对于多数项目来说，还达不到足够大，**敏捷、高效有时才是王道**，这就是我理解的近年来vue盛行的原因。vue凭借其易学、易用性迅速崛起。为了解决redux的繁琐，mobx应运而生，[mobx](https://cn.mobx.js.org/)采用类似vue的响应机制，细粒度的观测让数据变化不再这么繁琐，下节，我们会剖析mobx的基础使用，一起学起来吧!
 
 

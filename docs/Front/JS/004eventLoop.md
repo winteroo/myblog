@@ -1,4 +1,4 @@
-# 004 -- JS事件循环(Event Loop)
+# JS事件循环(Event Loop)
 
 ## 为什么JavaScript是单线程
 JavaScript语言的一大特点就是**单线程**，即同一时间内，JavaScript只能做一件事。

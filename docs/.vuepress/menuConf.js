@@ -8,7 +8,8 @@ module.exports = {
       '/JS/004eventLoop.md',
       '/JS/005closure.md',
       '/JS/006prototypeChain.md',
-      '/JS/007json.md'
+      '/JS/008extends.md',
+      '/JS/007json.md',
     ],
     // Vue菜单
     vueChildren: [
@@ -56,7 +57,7 @@ module.exports = {
         '/Nodejs/Express/01.md'
       ],
       koa2Children: [
-        '/Nodejs/Koa2/01.md'
+        '/Nodejs/Koa2/001koaStart.md'
       ],
     },
     java: {

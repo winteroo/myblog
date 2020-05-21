@@ -24,7 +24,6 @@ const eventProxy = {
     if (this.oneObj[key] === undefined) {
       this.oneObj[key] = [];
     }
-
     this.oneObj[key].push(fn);
   },
   off: function (key) {
@@ -38,7 +37,6 @@ const eventProxy = {
     }
     key = arguments[0];
     args = [].concat(Array.prototype.slice.call(arguments, 1));
-
     if (this.onObj[key] !== undefined &&
       this.onObj[key].length > 0) {
       for (let i in this.onObj[key]) {

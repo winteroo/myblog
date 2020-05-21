@@ -37,9 +37,14 @@ module.exports = {
           {
             text: '后端',
             // link: '/Backend/',
-            items: [
-              { text: 'Nodejs', link: '/Backend/Nodejs/' },
-              { text: 'Java', link: '/Backend/Java/' }
+            items: [{
+                text: 'Nodejs',
+                link: '/Backend/Nodejs/'
+              },
+              {
+                text: 'Java',
+                link: '/Backend/Java/'
+              }
             ]
           },
           {
@@ -125,16 +130,16 @@ module.exports = {
             }
           ],
           '/Backend/Java': [{
-            title: '概述',
-            collapsable: true,
-            children: ['/Backend/Java/']
-          },
-          {
-            title: 'Java',
-            collapsable: true,
-            children: getChildren('/Backend', menuConf.BackendMenu.java.javaChildren)
-          }
-        ],
+              title: '概述',
+              collapsable: true,
+              children: ['/Backend/Java/']
+            },
+            {
+              title: 'Java',
+              collapsable: true,
+              children: getChildren('/Backend', menuConf.BackendMenu.java.javaChildren)
+            }
+          ],
           '/About/': [{
             title: '关于作者',
             collapsable: true,
@@ -167,10 +172,18 @@ module.exports = {
     }
   },
   plugins: [
-    '@vuepress/back-to-top', 
-    '@vuepress/active-header-links', 
-    '@vuepress/last-updated', 
-    '@vuepress/medium-zoom'
+    ['@vuepress/back-to-top', true],
+    ['@vuepress/active-header-links',true],
+    ['@vuepress/last-updated',true],
+    ['@vuepress/medium-zoom',
+     {
+      selector: '.theme-default-content :not(a) > img',
+      options: {
+        margin: 20,
+        background: 'rgba(0,0,0,0.7)',
+        scrollOffset: 90
+      }
+    }]
   ]
 }
 
