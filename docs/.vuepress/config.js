@@ -173,14 +173,14 @@ module.exports = {
   },
   plugins: [
     ['@vuepress/back-to-top', true],
-    ['@vuepress/active-header-links',true],
-    ['@vuepress/last-updated',true],
+    ['@vuepress/active-header-links', true],
+    ['@vuepress/last-updated', true],
     ['@vuepress/medium-zoom',
      {
       selector: '.theme-default-content :not(a) > img',
       options: {
         margin: 20,
-        background: 'rgba(0,0,0,0.7)',
+        background: 'rgba(0, 0, 0, 0.7)',
         scrollOffset: 90
       }
     }]
