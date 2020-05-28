@@ -32,6 +32,9 @@ module.exports = {
     ],
     cssMenu:[
       '/css/01.md'
+    ],
+    netMenu: [
+      '/network/001tcpAndUdp.md'
     ]
   },
   AlgorithmMenu: {

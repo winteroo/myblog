@@ -91,6 +91,10 @@ module.exports = {
             title: 'Css',
             collapsable: true,
             children: getChildren('/Front', menuConf.FrontMenu.cssMenu)
+          }, {
+            title: '计算机网络',
+            collapsable: true,
+            children: getChildren('/Front', menuConf.FrontMenu.netMenu)
           }],
           '/Algorithm/': [{
               title: '概述',
