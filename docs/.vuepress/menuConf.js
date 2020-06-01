@@ -31,7 +31,8 @@ module.exports = {
       '/designPatterns/01.md'
     ],
     cssMenu:[
-      '/css/01.md'
+      '/css/001centerdiv.md',
+      '/css/002bfc.md',
     ],
     netMenu: [
       '/network/001tcpAndUdp.md'

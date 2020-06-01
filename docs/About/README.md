@@ -9,7 +9,7 @@
 * **框架**：Vue ||  React ||  Koa2
 * **宣言**：每天进步一点点
 * **邮箱**：yangwei957@163.com
-* **GitHub**： <a href="https://github.com/winteroo/myblog" target="_blank">https://github.com/winteroo/myblog</a>
+* **GitHub**： <a href="https://github.com/winteroo" target="_blank">https://github.com/winteroo</a>
 :::
 
 ![小超人](~@About/image/chaoren.jpeg)
