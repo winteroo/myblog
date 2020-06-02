@@ -33,6 +33,7 @@ module.exports = {
     cssMenu:[
       '/css/001centerdiv.md',
       '/css/002bfc.md',
+      '/css/003scss.md',
     ],
     netMenu: [
       '/network/001tcpAndUdp.md'
@@ -42,6 +43,7 @@ module.exports = {
     // 算法菜单
     algorithmChildren: [
       '/algorithm/000addParentId.md',
+      '/algorithm/000scale.md',
       '/algorithm/001twoSum.md',
       '/algorithm/002twoNumAdd.md',
       '/algorithm/033search.md',
@@ -51,7 +53,10 @@ module.exports = {
       '/algorithm/037solveSudoku.md',
     ],
     dataStructureMenu: [
-      '/dataStructure/001stack.md',
+      '/dataStructure/001Stack.md',
+      '/dataStructure/002Queue.md',
+      '/dataStructure/003Deque.md',
+      '/dataStructure/004LinkedList.md',
     ]
   },
   BackendMenu: {
