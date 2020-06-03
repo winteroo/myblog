@@ -16,6 +16,7 @@ module.exports = {
     ],
     // Vue菜单
     vueChildren: [
+      '/Vue/001debuggerVue.md',
       '/Vue/002verficationCode.md'
     ],
     // react菜单
@@ -57,6 +58,7 @@ module.exports = {
       '/dataStructure/002Queue.md',
       '/dataStructure/003Deque.md',
       '/dataStructure/004LinkedList.md',
+      '/dataStructure/005tree.md',
     ]
   },
   BackendMenu: {
