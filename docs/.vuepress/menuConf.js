@@ -35,6 +35,7 @@ module.exports = {
       '/css/001centerdiv.md',
       '/css/002bfc.md',
       '/css/003scss.md',
+      '/css/004flex.md',
     ],
     netMenu: [
       '/network/001tcpAndUdp.md'

@@ -62,7 +62,7 @@ module.exports = {
           },
           {
             text: 'GitHub',
-            link: 'https://github.com/winteroo/myblog',
+            link: 'https://github.com/winteroo',
             target: '_blank'
           }
         ],

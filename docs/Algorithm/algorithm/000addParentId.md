@@ -3,7 +3,7 @@
 leetcode，基础算法也算是入了门，今天借路上的时间仔细想了想这道题的解题思路，来到公司便编码验证了一下，下面提供题目、思路和题解
 ## 题目
 ::: tip 题目
-有一个数组，里面的每个item都是对象，对象存在key为children，children也是一个数组，同样
+有一个数组，里面的每个item都是对象，对象存在key为id，可能存在key为children，children是一个数组，同样
 他里面得每个item也都是对象，同时也可能存在children，现在要求为每个存在父级的item都添加一个
 parentId属性，值为父级的id。
 * 实例
