@@ -1,0 +1,24 @@
+// 修改菜单下拉按钮的样式
+.arrow {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  transition: all 0.6s;
+
+  &.right {
+    border-top: 2px solid #656565 !important;
+    border-right: 2px solid #656565 !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    transform: rotate(135deg);
+  }
+
+  &.down {
+    border-top: 2px solid #3eaf7c !important;
+    border-right: 2px solid #3eaf7c !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    transform: rotate(-45deg);
+    margin-bottom: -2px;
+  }
+}

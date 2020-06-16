@@ -17,7 +17,9 @@ module.exports = {
     // Vue菜单
     vueChildren: [
       '/Vue/001debuggerVue.md',
-      '/Vue/002verficationCode.md'
+      '/Vue/002verficationCode.md',
+      '/Vue/003datePicker.md',
+      '/Vue/004vueNoCache.md'
     ],
     // react菜单
     reactChildren: [
