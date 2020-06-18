@@ -13,6 +13,7 @@ module.exports = {
       '/JS/009new.md',
       '/JS/010bind.md',
       '/JS/011flatarray.md',
+      '/JS/012regular.md',
     ],
     // Vue菜单
     vueChildren: [
