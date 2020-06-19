@@ -20,7 +20,8 @@ module.exports = {
       '/Vue/001debuggerVue.md',
       '/Vue/002verficationCode.md',
       '/Vue/003datePicker.md',
-      '/Vue/004vueNoCache.md'
+      '/Vue/004vueNoCache.md',
+      '/Vue/005addComment.md'
     ],
     // react菜单
     reactChildren: [
