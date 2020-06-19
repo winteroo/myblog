@@ -1,5 +1,6 @@
 let menuConf = require('./menuConf');
-const path = require('path')
+const path = require('path');
+const { PassThrough } = require('stream');
 
 module.exports = {
   title: '进击的小超人',
@@ -199,7 +200,7 @@ module.exports = {
           appKey: 'qA0YCWkV6C3oYgonyHxagfSL',
           placeholder: '发表你的感想...(添加网址可直接点击头像文字进入该地址哦)',
           visitor: true,
-          path: '<%- window.location.pathname %>'
+          path: '<%- frontmatter.to.path %>'
         }
       }
     ]
