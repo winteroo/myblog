@@ -45,3 +45,33 @@
 ::-webkit-scrollbar-corner {
   background: #179a16;
 }
+
+// 评论组件的样式
+.txt-right {
+  display: none !important;
+}
+
+.v {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+
+  .vwrap {
+    border: 1px solid #42b983 !important;
+
+    .actived {
+      fill: #42b983 !important;
+    }
+
+    .vnick:focus, .vmail:focus, .vlink:focus {
+      border-bottom: 1px dashed #42b983 !important;
+    }
+
+    .vsubmit {
+      &:hover {
+        color: #42b983;
+        border: 1px solid #42b983 !important;
+      }
+    }
+  }
+}

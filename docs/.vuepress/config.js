@@ -180,14 +180,29 @@ module.exports = {
     ['@vuepress/active-header-links', true],
     ['@vuepress/last-updated', true],
     ['@vuepress/medium-zoom',
-     {
-      selector: '.theme-default-content :not(a) > img',
-      options: {
-        margin: 20,
-        background: 'rgba(0, 0, 0, 0.7)',
-        scrollOffset: 90
+      {
+        selector: '.theme-default-content :not(a) > img',
+        options: {
+          margin: 20,
+          background: 'rgba(0, 0, 0, 0.7)',
+          scrollOffset: 90
+        }
       }
-    }]
+    ],
+    [
+      'vuepress-plugin-comment',
+      {
+        choosen: 'valine',
+        options: {
+          el: '#valine-vuepress-comment',
+          appId: 'cpPdaCS4D4g9x7hYpeRiqzL8-gzGzoHsz',
+          appKey: 'qA0YCWkV6C3oYgonyHxagfSL',
+          placeholder: '发表你的感想...(添加网址可直接点击头像文字进入该地址哦)',
+          visitor: true,
+          path: '<%- window.location.pathname %>'
+        }
+      }
+    ]
   ]
 }
 
