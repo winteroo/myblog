@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>水平垂直居中子元素 | 进击的小超人</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/myblog/favicon.ico">
+    <meta name="description" content="JavaScript、Nodejs、Vue、React、Algorithm">
+    <link rel="preload" href="/myblog/assets/css/0.styles.c79f7989.css" as="style"><link rel="preload" href="/myblog/assets/js/app.453e8642.js" as="script"><link rel="preload" href="/myblog/assets/js/2.3c4aeba2.js" as="script"><link rel="preload" href="/myblog/assets/js/57.bc391c0b.js" as="script"><link rel="prefetch" href="/myblog/assets/js/10.83af3176.js"><link rel="prefetch" href="/myblog/assets/js/11.7b4131bf.js"><link rel="prefetch" href="/myblog/assets/js/12.1280369e.js"><link rel="prefetch" href="/myblog/assets/js/13.499720fd.js"><link rel="prefetch" href="/myblog/assets/js/14.ceff9c58.js"><link rel="prefetch" href="/myblog/assets/js/15.a178b9b3.js"><link rel="prefetch" href="/myblog/assets/js/16.96ad8d32.js"><link rel="prefetch" href="/myblog/assets/js/17.b13049f8.js"><link rel="prefetch" href="/myblog/assets/js/18.571b422e.js"><link rel="prefetch" href="/myblog/assets/js/19.df3fb1dc.js"><link rel="prefetch" href="/myblog/assets/js/20.25716f95.js"><link rel="prefetch" href="/myblog/assets/js/21.8dae54ad.js"><link rel="prefetch" href="/myblog/assets/js/22.c544fded.js"><link rel="prefetch" href="/myblog/assets/js/23.d37bd82e.js"><link rel="prefetch" href="/myblog/assets/js/24.5b7d1238.js"><link rel="prefetch" href="/myblog/assets/js/25.792020e0.js"><link rel="prefetch" href="/myblog/assets/js/26.80ec25ce.js"><link rel="prefetch" href="/myblog/assets/js/27.862435bb.js"><link rel="prefetch" href="/myblog/assets/js/28.164ce7cd.js"><link rel="prefetch" href="/myblog/assets/js/29.36b12874.js"><link rel="prefetch" href="/myblog/assets/js/3.f72e40b9.js"><link rel="prefetch" href="/myblog/assets/js/30.9bba5134.js"><link rel="prefetch" href="/myblog/assets/js/31.ba904784.js"><link rel="prefetch" href="/myblog/assets/js/32.b2fcd531.js"><link rel="prefetch" href="/myblog/assets/js/33.260b21d6.js"><link rel="prefetch" href="/myblog/assets/js/34.8a3bf1a0.js"><link rel="prefetch" href="/myblog/assets/js/35.87417bdc.js"><link rel="prefetch" href="/myblog/assets/js/36.c1d563a9.js"><link rel="prefetch" href="/myblog/assets/js/37.cb0febf3.js"><link rel="prefetch" href="/myblog/assets/js/38.eb1e9d20.js"><link rel="prefetch" href="/myblog/assets/js/39.9d71f480.js"><link rel="prefetch" href="/myblog/assets/js/4.4fb8c55c.js"><link rel="prefetch" href="/myblog/assets/js/40.90e61611.js"><link rel="prefetch" href="/myblog/assets/js/41.7a782b12.js"><link rel="prefetch" href="/myblog/assets/js/42.0669ba5f.js"><link rel="prefetch" href="/myblog/assets/js/43.3c747861.js"><link rel="prefetch" href="/myblog/assets/js/44.332bf3e1.js"><link rel="prefetch" href="/myblog/assets/js/45.79910041.js"><link rel="prefetch" href="/myblog/assets/js/46.758854c4.js"><link rel="prefetch" href="/myblog/assets/js/47.bed2c9af.js"><link rel="prefetch" href="/myblog/assets/js/48.65c68e24.js"><link rel="prefetch" href="/myblog/assets/js/49.bd028428.js"><link rel="prefetch" href="/myblog/assets/js/5.3f5e3e69.js"><link rel="prefetch" href="/myblog/assets/js/50.1ec82edf.js"><link rel="prefetch" href="/myblog/assets/js/51.a542d922.js"><link rel="prefetch" href="/myblog/assets/js/52.a93be0a3.js"><link rel="prefetch" href="/myblog/assets/js/53.e9d14908.js"><link rel="prefetch" href="/myblog/assets/js/54.60ab3fe8.js"><link rel="prefetch" href="/myblog/assets/js/55.acf67c40.js"><link rel="prefetch" href="/myblog/assets/js/56.7d3ada07.js"><link rel="prefetch" href="/myblog/assets/js/58.b8deb182.js"><link rel="prefetch" href="/myblog/assets/js/59.518297b6.js"><link rel="prefetch" href="/myblog/assets/js/6.d15901fc.js"><link rel="prefetch" href="/myblog/assets/js/60.a9af2f18.js"><link rel="prefetch" href="/myblog/assets/js/61.3d32dca1.js"><link rel="prefetch" href="/myblog/assets/js/62.efef438d.js"><link rel="prefetch" href="/myblog/assets/js/63.7a5a2d07.js"><link rel="prefetch" href="/myblog/assets/js/64.95ce0761.js"><link rel="prefetch" href="/myblog/assets/js/65.c5797645.js"><link rel="prefetch" href="/myblog/assets/js/7.7f90d6cb.js"><link rel="prefetch" href="/myblog/assets/js/8.a6e56e5f.js"><link rel="prefetch" href="/myblog/assets/js/9.c4f0a606.js">
+    <link rel="stylesheet" href="/myblog/assets/css/0.styles.c79f7989.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog/" class="home-link router-link-active"><img src="/myblog/home.jpg" alt="进击的小超人" class="logo"> <span class="site-name can-hide">进击的小超人</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myblog/Front/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/Backend/Nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/Backend/Java/" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog/Algorithm/" class="nav-link">
+  算法与数据结构
+</a></div><div class="nav-item"><a href="/myblog/Life/" class="nav-link">
+  杂谈
+</a></div><div class="nav-item"><a href="/myblog/About/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><a href="https://github.com/winteroo" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myblog/Front/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/Backend/Nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/Backend/Java/" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog/Algorithm/" class="nav-link">
+  算法与数据结构
+</a></div><div class="nav-item"><a href="/myblog/Life/" class="nav-link">
+  杂谈
+</a></div><div class="nav-item"><a href="/myblog/About/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><a href="https://github.com/winteroo" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>React</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Css</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog/Front/css/001centerdiv.html" class="active sidebar-link">水平垂直居中子元素</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myblog/Front/css/001centerdiv.html#子元素宽高已知" class="sidebar-link">子元素宽高已知</a></li><li class="sidebar-sub-header"><a href="/myblog/Front/css/001centerdiv.html#子元素宽高未知" class="sidebar-link">子元素宽高未知</a></li></ul></li><li><a href="/myblog/Front/css/002bfc.html" class="sidebar-link">BFC</a></li><li><a href="/myblog/Front/css/003scss.html" class="sidebar-link">SCSS</a></li><li><a href="/myblog/Front/css/004flex.html" class="sidebar-link">Flex布局</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>计算机网络</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="水平垂直居中子元素"><a href="#水平垂直居中子元素" class="header-anchor">#</a> 水平垂直居中子元素</h1> <p>子元素的水平垂直居中在css布局中是非常常用的技巧，下面就总结下实现方法，以下是基本的页面结构以及基本css样式：</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>content content-el<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>box box-el<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.content</span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 2px solid #108adf<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px dotted #108adf<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>在html代码中，我们为外层容器预留了<code>content-el</code>样式名，方便后续添加样式，同理也为内层子元素预留了<code>box-el</code>样式名。</p></div> <h2 id="子元素宽高已知"><a href="#子元素宽高已知" class="header-anchor">#</a> 子元素宽高已知</h2> <p>当子元素的宽高已知的情况下，居中子元素的方法主要为以下三种：</p> <ul><li><p>1、absolute + top:50% left:50% + margin负值</p></li> <li><p>2、absolute + top:0 left:0 right:0 botton:0 + margin:auto</p></li> <li><p>3、absolute + top:calc left:calc</p></li></ul> <h3 id="_1、absolute-top-50-left-50-margin负值"><a href="#_1、absolute-top-50-left-50-margin负值" class="header-anchor">#</a> 1、absolute + top:50% left:50% + margin负值</h3> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.content-el</span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box-el</span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> -50px<span class="token punctuation">;</span>
+  <span class="token property">margin-left</span><span class="token punctuation">:</span> -50px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>绝对定位的百分比(top50% left50%)是相对于父元素的宽高，通过这个特性可以让子元素居中显示，但是对于绝对定位是基于子元素的左上角，期望的效果是基于子元素的中心居中显示。
+为了修正这个问题，可以借助外边距的负值，负的外边距可以让元素向相反的方向定位，通过指定子元素的外边距为子元素宽度(或高度)一半的负值，就可以让子元素居中了。</p> <h3 id="_2、absolute-top-0-left-0-right-0-botton-0-margin-auto"><a href="#_2、absolute-top-0-left-0-right-0-botton-0-margin-auto" class="header-anchor">#</a> 2、absolute + top:0 left:0 right:0 botton:0 + margin:auto</h3> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.content-el</span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box-el</span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>通过绝对定位子元素，并且在各个定位方向的距离上都设为0，此时再将margin设为auto，就可以让子元素居中显示了。</p> <h3 id="_3、absolute-top-calc-left-calc"><a href="#_3、absolute-top-calc-left-calc" class="header-anchor">#</a> 3、absolute + top:calc left:calc</h3> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.content-el</span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box-el</span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - 50px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - 50px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>基本思想与第一种方法类似，只是利用了css3的新特性对语法做了更改。</p> <h2 id="子元素宽高未知"><a href="#子元素宽高未知" class="header-anchor">#</a> 子元素宽高未知</h2> <p>当子元素的宽高已知的情况下，居中子元素的方法主要为以下三种：</p> <ul><li><p>1、absolute + transform</p></li> <li><p>2、flex布局</p></li> <li><p>3、css-table</p></li></ul> <h3 id="_1、absolute-transform"><a href="#_1、absolute-transform" class="header-anchor">#</a> 1、absolute + transform</h3> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.content-el</span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box-el</span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>-50%<span class="token punctuation">,</span> -50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>原理同第一种方法，不过使用了css3新增的transform可以不必已知子元素的宽高。transform的translate属性也可以设置百分比，它是相对于自身的宽高，
+所以可以在不知道子元素宽高的情况下设置translate(-50%,-50%)，就可以让子元素向相反方向移动自身宽高的一半，继而实现水平垂直居中。</p> <h3 id="_2、flex布局"><a href="#_2、flex布局" class="header-anchor">#</a> 2、flex布局</h3> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.content-el</span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token comment">/*垂直居中 */</span>
+  <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token comment">/*水平居中*/</span>
+  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box-el</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>利用flex布局，一句代码便可实现在水平或是垂直方向上的居中，非常方便。</p> <h3 id="_3、css-table"><a href="#_3、css-table" class="header-anchor">#</a> 3、css-table</h3> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.content-el</span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> table-cell<span class="token punctuation">;</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box-el</span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>css新增的table属性，可以让我们把普通元素，变为table元素的现实效果，通过这个特性也可以实现水平垂直居中，这个属性和table标签一样的居中原理。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">6/1/2020, 7:13:47 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myblog/Front/designPatterns/01.html" class="prev">
+        设计模式
+      </a></span> <span class="next"><a href="/myblog/Front/css/002bfc.html">
+        BFC
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><div></div></div></div>
+    <script src="/myblog/assets/js/app.453e8642.js" defer></script><script src="/myblog/assets/js/2.3c4aeba2.js" defer></script><script src="/myblog/assets/js/57.bc391c0b.js" defer></script>
+  </body>
+</html>
